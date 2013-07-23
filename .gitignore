@@ -1,0 +1,6 @@
+/Devel-REPL-Profile-TSIBLEY-*
+/.build
+/_build*
+/Build
+MYMETA.*
+!META.json
