@@ -2,5 +2,6 @@
 /.build
 /_build*
 /Build
+/blib
 MYMETA.*
 !META.json
