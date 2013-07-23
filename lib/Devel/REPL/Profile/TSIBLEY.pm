@@ -12,8 +12,9 @@ extends 'Devel::REPL::Profile::Default';
 sub plugins {
     my @default = $_[0]->SUPER::plugins;
     return (
-        grep { $_ ne "DDS" } @default,
+        grep { not /^(DDS|ReadLineHistory)$/ } @default,
         "DDP",
+        "ReadLineHistory::WithoutExpansion",
     );
 }
 
@@ -24,9 +25,6 @@ sub apply_profile {
     $ENV{PERLREPL_HISTLEN} = 10_000;
 
     $repl->load_plugin($_) for $self->plugins;
-
-    # Turn off !event syntax so you don't have to escape all !
-    $repl->term->{do_expand} = 0;
 
     # Turn off green slime from Colors plugin
     $repl->normal_color("reset");
