@@ -37,6 +37,8 @@
       "runtime" : {
          "requires" : {
             "Data::Printer" : "0",
+            "Devel::REPL::Plugin::DDP" : "0",
+            "Devel::REPL::Plugin::ReadLineHistory::WithoutExpansion" : "0",
             "Devel::REPL::Profile::Default" : "0",
             "perl" : "5.008005"
          }
@@ -59,6 +61,6 @@
          "web" : "https://github.com/tsibley/Devel-REPL-Profile-TSIBLEY"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
 
