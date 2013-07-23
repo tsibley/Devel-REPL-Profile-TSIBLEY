@@ -19,6 +19,10 @@ sub plugins {
 
 sub apply_profile {
     my ($self, $repl) = @_;
+
+    # The past is the key to the present.
+    $ENV{PERLREPL_HISTLEN} = 10_000;
+
     $repl->load_plugin($_) for $self->plugins;
 
     # Turn off !event syntax so you don't have to escape all !
