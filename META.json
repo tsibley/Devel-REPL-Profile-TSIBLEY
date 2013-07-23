@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "TSIBLEY's personal Devel::REPL profile",
    "author" : [
       "Thomas Sibley <tsibley@cpan.org>"
    ],
@@ -36,6 +36,8 @@
       },
       "runtime" : {
          "requires" : {
+            "Data::Printer" : "0",
+            "Devel::REPL::Profile::Default" : "0",
             "perl" : "5.008005"
          }
       },
@@ -46,6 +48,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/tsibley/Devel-REPL-Profile-TSIBLEY/issues"
+      },
+      "homepage" : "https://github.com/tsibley/Devel-REPL-Profile-TSIBLEY",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/tsibley/Devel-REPL-Profile-TSIBLEY.git",
+         "web" : "https://github.com/tsibley/Devel-REPL-Profile-TSIBLEY"
+      }
+   },
    "version" : "0.01"
 }
 
